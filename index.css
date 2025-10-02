@@ -116,5 +116,9 @@ p, .text{
   transform: scale(1.2); 
 }
 
+footer {
+    margin-top: 3rem;
+}
+
 
 
