@@ -100,6 +100,14 @@ p, .text{
     border-radius: 14px;
 }
 
+.abt-creator img {
+    width: 350px;        /* adjust this value as needed */
+    height: auto;        /* keeps proportions correct */
+    display: block;
+    margin: 0 auto;      /* centers it in the column */
+    object-fit: cover;   /* keeps it nicely cropped if needed */
+}
+
 .abt-btn {
     border: 4px solid var(--accent);
     font-size: 1.3rem;
