@@ -67,6 +67,7 @@ p, .text{
     padding: 5rem;
     background-color: #fff;
     z-index: 1;
+    border-radius: 10px;
 }
 
 /* first border */
@@ -81,6 +82,7 @@ p, .text{
     transform: rotate(-1deg);
     z-index: -2;
     pointer-events: none;
+    border-radius: 12px;
 }
 
 /* second border */
@@ -95,6 +97,7 @@ p, .text{
     transform: rotate(0.8deg);
     z-index: -3;
     pointer-events: none;
+    border-radius: 14px;
 }
 
 .abt-btn {
@@ -146,14 +149,45 @@ h3 {
   overflow: visible !important; 
 }
 
+/* contact form */
 .form-container {
+    position: relative;
+    background-color: var(--background);
+    z-index: 1;
+    margin: 0 auto;
     max-width: 600px;
-    margin: 80px auto; /* centers vertically + horizontally */
     padding: 2rem;
-    /* background: var(--primary); */
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+.form-container::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 6px solid var(--accent);
+    transform: rotate(-1deg);
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 12px;
+}
+
+.form-container::after {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    right: -18px;
+    bottom: -18px;
+    border: 5px solid var(--accent2);
+    transform: rotate(0.8deg);
+    z-index: -2;
+    pointer-events: none;
+    border-radius: 14px;
+}
+
 
 .form-title {
     text-align: center;
@@ -171,6 +205,32 @@ h3 {
 footer {
     margin-top: 3rem;
 }
+
+/* table */
+
+
+table.table th {
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.3rem;
+}
+
+table.table td {
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+table.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h2 {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+
 
 
 
