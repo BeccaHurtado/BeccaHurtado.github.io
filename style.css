@@ -222,6 +222,10 @@ footer a:hover i.bi-linkedin {
   color: var(--accent);
 }
 
+footer a:hover i.bi-envelope {
+  color: var(--accent);
+}
+
 /* table */
 
 
