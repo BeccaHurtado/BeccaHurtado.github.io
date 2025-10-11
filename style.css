@@ -214,6 +214,14 @@ footer {
     margin-top: 3rem;
 }
 
+footer a:hover i.bi-github {
+  color: var(--accent);
+}
+
+footer a:hover i.bi-linkedin {
+  color: var(--accent);
+}
+
 /* table */
 
 
